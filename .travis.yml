@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode9
+xcode_project: TravisConfig.xcodeproj
+xcode_scheme: TravisConfig
+xcode_sdk: iphonesimulator11.0
+script:
+- xcodebuild -project TravisConfig.xcodeproj -scheme TravisConfig -sdk iphonesimulator11.0 build test
