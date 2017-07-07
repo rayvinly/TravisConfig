@@ -4,4 +4,4 @@ xcode_project: TravisConfig.xcodeproj
 xcode_scheme: TravisConfig
 xcode_sdk: iphonesimulator11.0
 script:
-- xcodebuild -project TravisConfig.xcodeproj -scheme TravisConfig -sdk iphonesimulator11.0 build test
+- xcodebuild -project TravisConfig.xcodeproj -scheme TravisConfig -sdk iphonesimulator11.0 -destination 'platform=iOS Simulator,name=iPhone 7 Plus' build test
